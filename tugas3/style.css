@@ -1,0 +1,32 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    padding: 20px;
+}
+.tasbar{
+    text-align: center;
+    background-color: #FF6EC7;
+}
+.Scroll{
+    height: 2000px;
+    background-color: #ff6fff;
+    text-align: center;
+}
+.Tombol_atas{
+    background-color: black;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+.well{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.Tombol_atas:hover{
+    opacity: 1;
+}
