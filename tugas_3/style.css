@@ -1,0 +1,172 @@
+/* bagian header */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.layout {
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+header {
+    background-image: url(persib.jpeg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px #333 solid;
+    height: 500px;
+    color: white;
+}
+
+nav {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px #333 solid;
+
+}
+
+/* bagian logo */
+nav .logo {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+nav .menu {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+nav .menu a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+/* bagian article */
+section {
+    background-color: #bdc3c7;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    border-bottom: 2px solid;
+}
+
+article {
+    border: 2px solid;
+    padding: 20px;
+    min-height: 200px;
+    border-radius: 10px;
+}
+
+article.beranda {
+    background-image: url(foto_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+aside {
+    border: 2px solid;
+    padding: 20px;
+    min-height: 200px;
+    border-radius: 10px;
+}
+
+aside.beranda {
+    background-image: url(foto1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* bagian biodata */
+.mybiodata {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    font-size: larger;
+}
+.bio{
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border: 1px solid;
+    border-radius: 6px;
+    border-left: 4px solid;
+    transition: 0.3 s ease;
+}
+.bio:hover{
+    background-color: #e2e8f0;
+    transform: translateX(5px);
+}
+.bio .label{
+    width: 100px;
+    font-weight: bold;
+    color: #003366;
+    font-family: georgia;
+}
+.bio .value{
+    color: #2b2b2b;
+    font-family: georgia;
+}
+
+.fbiodata {
+    background-color: whitesmoke;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.biodata ul{
+    list-style: georgian;
+}
+.keahlian{
+    border-top: 20px;
+}
+.container{
+    width: 100px;
+    padding: 20px;
+}
+.galery-grid{
+    display: flex;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 15px;
+    margin-top:15px ;
+}
+.galery-grid img{
+    width: 200px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid;
+    box-shadow: 0 4px 6px;
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+}
+.galery-grid img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px;
+    cursor: pointer;
+}
